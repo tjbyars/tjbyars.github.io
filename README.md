@@ -1,9 +1,10 @@
 <html>
 
   <head>
-    <title>tjbyars</title>
     <link rel="stylesheet" href="styles.css">
   </head>
+
+  <title>tjbyars</title>
 
   <body>
     <h1>Website of tjbyars</h1>
