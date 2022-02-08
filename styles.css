@@ -1,6 +1,12 @@
+html,
 body {
-  background-color: #292929;
+  height: 100%;
+}
+
+body {
   margin: 0;
+  background-color: #292929;
+  overflow: hidden;
 }
 
 nav {
@@ -8,7 +14,7 @@ nav {
   top: 50%;
   right: 0;
   left: 0;
-  width: 400px;
+  width: 319px;
   display: table;
   margin: 0 auto;
   transform: translateY(-50%);
@@ -16,12 +22,12 @@ nav {
 
 nav a {
   position: relative;
-  width: 25%;
+  width: 33.333%;
   display: table-cell;
   text-align: center;
   color: #949494;
   text-decoration: none;
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   padding: 10px 20px;
   transition: 0.2s ease color;
@@ -55,31 +61,23 @@ nav a:nth-child(1):before {
 }
 
 nav a:nth-child(1):after {
-  background-color: purple;
+  background-color: red;
 }
 
 nav a:nth-child(2):before {
-  background-color: yellow;
+  background-color: #00e2ff;
 }
 
 nav a:nth-child(2):after {
-  background-color: purple;
+  background-color: #89ff00;
 }
 
 nav a:nth-child(3):before {
-  background-color: yellow;
+  background-color: purple;
 }
 
 nav a:nth-child(3):after {
-  background-color: purple;
-}
-
-nav a:nth-child(4):before {
-  background-color: yellow;
-}
-
-nav a:nth-child(4):after {
-  background-color: purple;
+  background-color: palevioletred;
 }
 
 #indicator {
@@ -88,13 +86,13 @@ nav a:nth-child(4):after {
   bottom: 0;
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   transition: 0.2s ease left;
 }
 
 nav a:hover {
-  color: white;
+  color: #fff;
 }
 
 nav a:hover:before,
@@ -103,17 +101,15 @@ nav a:hover:after {
 }
 
 nav a:nth-child(1):hover ~ #indicator {
-  background: linear-gradient(130deg, yellow, purple);
+  background: linear-gradient(130deg, yellow, red);
 }
 
 nav a:nth-child(2):hover ~ #indicator {
-  background: linear-gradient(130deg, yellow, purple);
+  left: 34%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
 }
 
 nav a:nth-child(3):hover ~ #indicator {
-  background: linear-gradient(130deg, yellow, purple);
-}
-
-nav a:nth-child(4):hover ~ #indicator {
-  background: linear-gradient(130deg, yellow, purple);
+  left: 70%;
+  background: linear-gradient(130deg, purple, palevioletred);
 }
