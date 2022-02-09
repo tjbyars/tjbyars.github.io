@@ -19,7 +19,7 @@ nav a {
   width: 25%;
   display: table-cell;
   text-align: center;
-  color: #949494;
+  color: #78c29d;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -51,35 +51,35 @@ nav a:after {
 }
 
 nav a:nth-child(1):before {
-  background-color: yellow;
+  background-color: #f5cb42;
 }
 
 nav a:nth-child(1):after {
-  background-color: red;
+  background-color: #f57842;
 }
 
 nav a:nth-child(2):before {
-  background-color: #00e2ff;
+  background-color: #f54275;
 }
 
 nav a:nth-child(2):after {
-  background-color: #89ff00;
+  background-color: #eb75db;
 }
 
 nav a:nth-child(3):before {
-  background-color: purple;
+  background-color: #9c75eb;
 }
 
 nav a:nth-child(3):after {
-  background-color: palevioletred;
+  background-color: #7589eb;
 }
 
 nav a:nth-child(4):before {
-  background-color: blue;
+  background-color: #75d7eb;
 }
 
 nav a:nth-child(4):after {
-  background-color: purple;
+  background-color: #5ee6a2;
 }
 
 #indicator {
@@ -103,20 +103,20 @@ nav a:hover:after {
 }
 
 nav a:nth-child(1):hover ~ #indicator {
-  background: linear-gradient(130deg, yellow, red);
+  background: linear-gradient(130deg, #f5cb42, #f57842);
 }
 
 nav a:nth-child(2):hover ~ #indicator {
   left: 25%;
-  background: linear-gradient(130deg, #00e2ff, #89ff00);
+  background: linear-gradient(130deg, #f54275, #eb75db);
 }
 
 nav a:nth-child(3):hover ~ #indicator {
   left: 50%;
-  background: linear-gradient(130deg, purple, palevioletred);
+  background: linear-gradient(130deg, #9c75eb, #7589eb);
 }
 
 nav a:nth-child(4):hover ~ #indicator {
   left: 75%;
-  background: linear-gradient(130deg, blue, purple);
+  background: linear-gradient(130deg, #75d7eb, #5ee6a2);
 }
